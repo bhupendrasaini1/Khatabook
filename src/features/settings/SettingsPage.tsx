@@ -70,7 +70,12 @@ export function SettingsPage() {
               <p className="text-sm font-medium text-slate-200">Dark Mode</p>
               <p className="text-xs text-slate-500">Use dark theme throughout the app</p>
             </div>
-            <div className="w-10 h-6 rounded-full bg-teal-500 relative cursor-pointer">
+            <div 
+              className="w-10 h-6 rounded-full bg-teal-500 relative cursor-pointer opacity-80"
+              onClick={() => {
+                alert('Khatabook is exclusively optimized for Dark Mode to reduce eye strain during financial analysis. Light mode is currently disabled.');
+              }}
+            >
               <div className="absolute right-0.5 top-0.5 w-5 h-5 bg-white rounded-full shadow transition-all" />
             </div>
           </div>
