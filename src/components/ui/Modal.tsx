@@ -22,6 +22,7 @@ const sizeStyles = {
   md: 'max-w-lg',
   lg: 'max-w-2xl',
   xl: 'max-w-4xl',
+
 };
 
 export function Modal({ isOpen, onClose, title, description, children, size = 'md', className }: ModalProps) {
