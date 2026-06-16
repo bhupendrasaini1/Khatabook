@@ -59,7 +59,7 @@ export function LoginPage() {
               <Wallet size={28} className="text-white" />
             </div>
             <div>
-              <h1 className="text-3xl font-bold text-white tracking-tight">Khatabook</h1>
+              <h1 className="text-3xl font-bold text-white tracking-tight">Payment Flow AI</h1>
               <p className="text-sm text-teal-400 font-medium tracking-wide">Cash Flow Pro</p>
             </div>
           </div>
