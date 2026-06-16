@@ -53,7 +53,7 @@ export function Modal({ isOpen, onClose, title, description, children, size = 'm
       {/* Dialog */}
       <div
         className={cn(
-          'relative w-full',
+          'relative w-full max-h-full flex flex-col',
           sizeStyles[size],
           'glass-card-static p-0 overflow-hidden',
           'animate-scale-in',
@@ -77,7 +77,7 @@ export function Modal({ isOpen, onClose, title, description, children, size = 'm
         )}
 
         {/* Body */}
-        <div className="p-5 max-h-[70vh] overflow-y-auto">
+        <div className="p-5 overflow-y-auto flex-1 custom-scrollbar">
           {children}
         </div>
       </div>
