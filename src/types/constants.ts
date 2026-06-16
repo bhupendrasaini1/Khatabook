@@ -2,7 +2,7 @@
    CONSTANTS — App-wide constant values
    ====================================== */
 
-export const APP_NAME = 'Khatabook';
+export const APP_NAME = 'Payment Flow AI';
 export const APP_DESCRIPTION = 'Intelligent Cash Flow Management';
 export const DEFAULT_CURRENCY = '₹';
 export const DEFAULT_CURRENCY_CODE = 'INR';

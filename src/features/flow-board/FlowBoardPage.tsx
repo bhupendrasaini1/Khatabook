@@ -219,6 +219,24 @@ export function FlowBoardPage() {
           nodes={nodes}
           edges={edges}
           nodeTypes={nodeTypes}
+          onNodeClick={(_, node) => {
+            const newPrice = window.prompt(`Update price/amount for ${node.data.label}:`, node.data.outstanding?.toString() || '0');
+            if (newPrice !== null) {
+              const newMessage = window.prompt(`Add a message/note for ${node.data.label}:`, 'Updated via Payment Flow AI');
+              if (newMessage !== null) {
+                alert(`Successfully updated ${node.data.label}!\nNew Price/Amount: ${newPrice}\nMessage: ${newMessage}`);
+              }
+            }
+          }}
+          onEdgeClick={(_, edge) => {
+            const newPrice = window.prompt(`Update allocation price/amount:`, edge.label?.toString() || '0');
+            if (newPrice !== null) {
+              const newMessage = window.prompt(`Add a message for this allocation:`, 'Payment Flow AI Allocation');
+              if (newMessage !== null) {
+                alert(`Successfully updated allocation!\nNew Price/Amount: ${newPrice}\nMessage: ${newMessage}`);
+              }
+            }
+          }}
           fitView
           fitViewOptions={{ padding: 0.2 }}
           proOptions={{ hideAttribution: true }}

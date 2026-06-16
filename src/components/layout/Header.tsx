@@ -31,7 +31,8 @@ export function Header() {
   const [searchFocused, setSearchFocused] = useState(false);
   const menuRef = useRef<HTMLDivElement>(null);
 
-  const pageTitle = pathLabels[location.pathname] || 'Khatabook';
+  // Determine page title based on route
+  const pageTitle = pathLabels[location.pathname] || 'Payment Flow AI';
 
   // Build breadcrumbs
   const breadcrumbs = location.pathname === '/'

@@ -8,13 +8,13 @@ import { EmptyState } from '@/components/ui/EmptyState';
 import { Badge } from '@/components/ui/Badge';
 
 // In V1, audit logs are lightweight — future versions will track all changes
-const sampleLogs = [
-  { id: 1, time: 'Today, 2:30 PM', user: 'Bhupendra Saini', action: 'Login', entity: 'User', desc: 'Logged in to the system', color: 'info' as const },
-  { id: 2, time: 'Today, 2:32 PM', user: 'Bhupendra Saini', action: 'View', entity: 'Dashboard', desc: 'Viewed dashboard', color: 'neutral' as const },
-  { id: 3, time: 'Today, 2:35 PM', user: 'Bhupendra Saini', action: 'Create', entity: 'Buyer Transaction', desc: 'Created invoice INV-2025-036', color: 'success' as const },
-  { id: 4, time: 'Today, 2:40 PM', user: 'Bhupendra Saini', action: 'Update', entity: 'Buyer', desc: 'Updated credit limit for Rajesh Electronics', color: 'info' as const },
-  { id: 5, time: 'Today, 2:45 PM', user: 'Bhupendra Saini', action: 'Allocate', entity: 'Payment Plan', desc: 'Auto-allocated Week 1 payments', color: 'warning' as const },
-  { id: 6, time: 'Today, 3:00 PM', user: 'Bhupendra Saini', action: 'Export', entity: 'Report', desc: 'Exported Outstanding Receivables as CSV', color: 'neutral' as const },
+const mockLogs = [
+  { id: 1, time: 'Today, 2:30 PM', user: 'Deepanshu', action: 'Login', entity: 'User', desc: 'Logged in to the system', color: 'info' as const },
+  { id: 2, time: 'Today, 2:32 PM', user: 'Deepanshu', action: 'View', entity: 'Dashboard', desc: 'Viewed dashboard', color: 'neutral' as const },
+  { id: 3, time: 'Today, 2:35 PM', user: 'Deepanshu', action: 'Create', entity: 'Buyer Transaction', desc: 'Created invoice INV-2025-036', color: 'success' as const },
+  { id: 4, time: 'Today, 2:40 PM', user: 'Deepanshu', action: 'Update', entity: 'Buyer', desc: 'Updated credit limit for Rajesh Electronics', color: 'info' as const },
+  { id: 5, time: 'Today, 2:45 PM', user: 'Deepanshu', action: 'Allocate', entity: 'Payment Plan', desc: 'Auto-allocated Week 1 payments', color: 'warning' as const },
+  { id: 6, time: 'Today, 3:00 PM', user: 'Deepanshu', action: 'Export', entity: 'Report', desc: 'Exported Outstanding Receivables as CSV', color: 'neutral' as const },
 ];
 
 export function AuditPage() {

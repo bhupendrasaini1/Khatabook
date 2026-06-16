@@ -36,7 +36,7 @@ export function App() {
           </div>
           
           <div className="text-center">
-            <h2 className="text-lg font-semibold text-slate-200">Initializing Khatabook</h2>
+            <h2 className="text-lg font-semibold text-slate-200">Initializing Payment Flow AI</h2>
             <p className="text-sm text-slate-500 mt-1">Setting up local database...</p>
           </div>
         </div>

@@ -74,12 +74,10 @@ export function Sidebar() {
           <div className="w-9 h-9 rounded-xl bg-gradient-to-br from-teal-500 to-emerald-500 flex items-center justify-center shadow-lg shadow-teal-500/20">
             <Wallet size={18} className="text-white" />
           </div>
-          {!sidebarCollapsed && (
-            <div className="animate-fade-in">
-              <h1 className="text-base font-bold text-slate-100 tracking-tight">Khatabook</h1>
-              <p className="text-[10px] text-teal-400/80 font-medium tracking-wider uppercase">Cash Flow Pro</p>
-            </div>
-          )}
+          <div className={cn("flex flex-col transition-all duration-300 overflow-hidden", sidebarCollapsed ? "w-0 opacity-0" : "w-auto opacity-100")}>
+            <h1 className="text-base font-bold text-slate-100 tracking-tight">Payment Flow AI</h1>
+            <span className="text-[10px] uppercase tracking-widest text-teal-500 font-semibold">Workspace</span>
+          </div>
 
           {/* Mobile close */}
           <button

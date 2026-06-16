@@ -28,12 +28,12 @@ export async function seedDatabase(): Promise<void> {
     async () => {
       // --- Organization ---
       const orgId = await db.organizations.add({
-        name: 'Saini Traders Pvt. Ltd.',
+        name: 'Payment Flow AI',
         businessType: 'Wholesaler',
         gstNumber: '07AAACS1234F1ZH',
         address: '42, Chandni Chowk, Old Delhi, Delhi 110006',
         phone: '+91 98765 43210',
-        email: 'info@sainitraders.com',
+        email: 'info@paymentflow.ai',
         currency: 'INR',
         financialYearStart: 4,
         status: EntityStatus.Active,
@@ -43,8 +43,8 @@ export async function seedDatabase(): Promise<void> {
       // --- User ---
       await db.users.add({
         orgId,
-        name: 'Bhupendra Saini',
-        email: 'admin@sainitraders.com',
+        name: 'Deepanshu',
+        email: 'admin@paymentflow.ai',
         passwordHash: 'demo123', // In V1, plaintext for demo
         role: UserRole.OrgAdmin,
         status: EntityStatus.Active,
